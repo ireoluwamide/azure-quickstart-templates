@@ -24,6 +24,6 @@ steps:
     subscriptionId: '52bc4dc8-a26d-473e-9544-fcb5f04bf270'
     location: 'UK South'
     templateLocation: 'Linked artifact'
-    csmFile: 'https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/tutorials-use-key-vault/CreateKeyVault.json'
-    csmParametersFile: ''
+    csmFile: 'https://raw.githubusercontent.com/ireoluwamide/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json'
+    csmParametersFile: 'https://raw.githubusercontent.com/ireoluwamide/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.parameters.json'
     deploymentMode: 'Incremental'

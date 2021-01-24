@@ -17,3 +17,13 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Subscription'
+    azureResourceManagerConnection: 'Free Trial(52bc4dc8-a26d-473e-9544-fcb5f04bf270)'
+    subscriptionId: '52bc4dc8-a26d-473e-9544-fcb5f04bf270'
+    location: 'UK South'
+    templateLocation: 'Linked artifact'
+    csmFile: 'https://github.com/Azure/azure-quickstart-templates/blob/master/101-key-vault-create/azuredeploy.json'
+    csmParametersFile: 'https://github.com/Azure/azure-quickstart-templates/blob/master/101-key-vault-create/azuredeploy.parameters.json'
+    deploymentMode: 'Incremental'
